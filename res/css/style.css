@@ -1,0 +1,100 @@
+body, html {
+	background: #eee;
+	-webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+canvas {
+    -moz-box-shadow: inset 0 -60px 30px -60px #000000;
+    -webkit-box-shadow: inset 0 -60px 30px -60px #000000;
+    box-shadow: inset 0 -60px 30px -60px #000000;
+    background: #333;
+
+    height: 600px;
+    width: 100%;
+    transition: max-height 0.5s ease-in;
+}
+
+/* Nav bar */
+.navbar-container {
+	background: rgba(0,0,0,0.05);
+	border: 1px solid rgba(0,0,0,0.06);
+
+}
+
+.uk-navbar {
+	background: none;
+	border: none;
+	border-radius: 0;	
+}
+
+@media (max-width: 480px) {
+	.uk-navbar-nav, .uk-navbar-flip {
+		float: none !important;
+	}
+
+	.uk-navbar-nav > li {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+
+.uk-navbar-nav:first-child > li:first-child > a {
+	border-radius: 0;
+}
+
+.uk-dropdown {
+	padding: 8px 15px;
+}
+
+
+/* Debt Table */
+.debt-table-head {
+	margin-bottom: 0;
+}
+
+.debt-table-main, .debt-table-sub {
+	margin: 0;
+	text-transform: capitalize;
+}
+
+.debt-table-sub {
+	background-color: rgba(0,0,0,0.05);
+
+}
+
+.debt-table-sub th, .debt-table-sub td {
+	padding: 2px 8px;
+	border-bottom-color: #ccc;
+}
+
+.debt-table-sub tr th:first-child, .debt-table-sub tr td:first-child {
+	padding-left: 25px;
+}
+
+i.caret-icon {
+	padding: 0 5px;
+}
+
+i.caret-icon.uk-icon-caret-right {
+    padding: 0 6.5px;
+}
+
+/* Add Entry form */
+input.form-radio {
+	margin-right: 5px;
+	height: 16px;
+	vertical-align: middle;
+}
+
+div.form-infopanel {
+	padding: 2px 10px;
+	margin: 0;
+}
+
